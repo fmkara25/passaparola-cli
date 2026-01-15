@@ -12,13 +12,7 @@
         return "YANLIS"
 
 
-def main():
-    sorular = {
-        "A": {"soru": "Türkiye'nin başkenti neresidir?", "cevap": "ankara"},
-        "B": {"soru": "2015/16 sezonu Turkiye Futbol Ligi sampiyonu takimin kisaltmasi?", "cevap": "bjk"},
-        "C": {"soru": "Messi'nin yillarca rekabet ettigi en buyuk rakibinin ilk ismi?", "cevap": "cristiano"},
-    }
-
+def oyunu_calistir(sorular):
     durumlar = {}
 
     # 1. TUR
@@ -46,6 +40,16 @@ def main():
     print("\nOyun bitti!")
     print("Doğru sayısı:", dogru_sayisi)
     print("Yanlış sayısı:", yanlis_sayisi)
+
+
+def main():
+    sorular = {
+        "A": {"soru": "Türkiye'nin başkenti neresidir?", "cevap": "ankara"},
+        "B": {"soru": "2015/16 sezonu Turkiye Futbol Ligi sampiyonu takimin kisaltmasi?", "cevap": "bjk"},
+        "C": {"soru": "Messi'nin yillarca rekabet ettigi en buyuk rakibinin ilk ismi?", "cevap": "cristiano"},
+    }
+
+    oyunu_calistir(sorular)
 
 
 if __name__ == "__main__":
